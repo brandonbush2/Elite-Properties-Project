@@ -104,6 +104,59 @@ Included data from the grade column and performed one hot encoding
 * Adjusted R-squared of 0.681( **68.1%** of variations were explained by this model)
 * Root Mean Squared error(RMSE) of **207312.12**.
 
+# Regression Results
+Houses that are `grade_13` and `grade_12` as well as houses with 7 and 8 bathrooms tend to have the highest impact on Saleprice since they have the highest coefficients.
+
+However, `sqft_living` and `sqft_lot` also have a high impact on SalePrice. They have low coefficients here since they are not in boolean unlike grade or bathrooms.
+An increase by 1 square foot of living area results to an increase by 149.59 on Sale Price.
+An increase by 1 square foot of lot size leads to a decrease bt 0.27 on Sale Price.
+Houses that have a waterfront view are estimated to be worth from USD700,000 indicating that the Saleprice is also very dependent on waterfront access.
+Houses off `grade_13` are worth around USD 2,000,000 while houses with 7-8 bedrooms are worth around USD1,400,000 and USD1,900,000.
+
+# Visualization
+### 1. Does the number of bathrooms have an impact on sale price?
+![Bar plot of bathrooms and price](https://example.com/image.png)
+
+From the barplot above, houses with 8 bathrooms have the highest SalePrice. Houses with fewer bathrooms have a lower Sale Price which would mean that home buyers would prefer houses with more bathrooms. Also from our model we identified that houses with more bathrooms i.e 7 and 8 have a higher coefficient and impact SalePrice more.
+
+### 2. How does square feet of living room area impact sale price?
+![Bar plot of sqft_living and price](https://github.com/brandonbush2/Elite-Properties-Project/blob/master/Images/Bar%20plot%20of%20sqft%20and%20price.png)
+
+Houses with larger living room area square feet have a higher sale price. The price of houses increases with increase in square feet of living area.
+
+### 3. Does presence or absence of a waterfront have an impact on saleprice?
+![Bar plot of waterfront against price](https://github.com/brandonbush2/Elite-Properties-Project/blob/master/Images/Bar%20plot%20of%20waterfront%20and%20price.png)
+
+From the graph above, houses with a view to a waterfront have a higher sale price than house with no view to a waterfront. This means that if a home owner's house has a waterfront view, the value to of that house may be higher than the one with no waterfront view.
+
+Houses with no waterfront view are sold at a price not more than the average Sale Price, while those with a waterfront view are sold at a price mostly higher than the average Sale Price.
+
+# Conclusion
+### Summary of Findings and Recommendations
+#### 1. Grade
+The higher the grade assigned to a house, the higher the estimated value and potential selling price.
+The grade of a house is an important factor influencing its market value and attractiveness to potential buyers.
+Buyers are willing to pay more for houses with higher-grade ratings, indicating perceived quality and desirability.
+Homeowners looking to increase the value of their properties may consider improving the overall grade by enhancing various features and amenities.
+
+#### 2. Bathrooms
+The greater the number of bathrooms in a house, the higher its estimated value and potential selling price.
+Having more bathrooms is seen as a desirable feature by buyers, as it provides convenience and accommodates larger households.
+Homeowners looking to increase the value of their properties may consider adding or upgrading bathrooms to attract potential buyers and command a higher sale price.
+
+#### 3. Waterfront
+Properties with a waterfront view are considered more desirable and offer a unique feature that attracts buyers.
+The scenic beauty and recreational opportunities associated with waterfront properties contribute to their increased market value.
+Homeowners who own properties with a waterfront view can expect a higher potential selling price.
+Investing in a property with a waterfront view can potentially yield a higher return on investment compared to similar properties without such a feature.
+
+#### 4. Square Foot of living area
+The size of the living area is a significant factor in determining the market value and desirability of a property.
+Buyers often prioritize spacious living areas, as they provide more room for living, entertaining, and accommodating their needs.
+Larger living areas offer greater flexibility in furniture arrangement and potential for customization.
+Homeowners who own houses with a larger square footage of living area can expect a higher potential selling price.
+
+
 
 
 
