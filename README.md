@@ -68,14 +68,43 @@ The column names and descriptions as provided can be found in the `column_names.
 * **sqft_lot15** - The square footage of the land lots of the nearest 15 neighbors
 
 # Modeling
-Created 4 models before finalizing the final model.
+Using an alpha/significance level of 0.05, created 4 models before finalizing the final model.
 
 ## Model A
 * Number of Features was 1. (sqft_living)
-* Adjusted R-squared of 0.493( 49.3% of variations were explained by this model)
-* Root Mean Squared error(RMSE) of 261689.59 meaning that on average the actual price will be USD 261,689 more or less than our predicted price. 
+* Adjusted R-squared of 0.493( **49.3%** of variations were explained by this model)
+* Root Mean Squared error(RMSE) of **261689.59** meaning that on average the actual price will be USD 261,689 more or less than our predicted price. 
+* The coefficent of sqft_living is 280, which means that for every additional square-foot of living area, the price increases by USD 280.
 * Built a scatter plot with the predicted y values and found that for smaller living areas our model looks decent but as the sqft_living value increases our model's performance declines. This shows that sqft_living is not a good enough predictor for larger houses.
-![Scatter Plot with Predicted values](https://example.com/image.png)
+![Scatter Plot with Predicted values](https://github.com/brandonbush2/Elite-Properties-Project/blob/master/Images/Scatter%20Plot%20with%20Predicted%20Y.png)
+
+## Model B
+* Used 9 Features.
+* Adjusted R-squared of 0.648( **64.8%** of variations were explained by this model)
+* Root Mean Squared error(RMSE) of **217893.79**.
+* Created a QQ-plot of residuals.
+![QQ plot of Residuals](https://github.com/brandonbush2/Elite-Properties-Project/blob/master/Images/QQ%20plot.png)
+There appeared to be some issues with the residuals not being normally distributed.
+
+## Model C
+I tested for multicolinearity and remove features which are multicolinear with each other.
+* Used 8 Features.
+* Adjusted R-squared of 0.588( **58.8%** of variations were explained by this model)
+* Root Mean Squared error(RMSE) of **235693.65**.
+
+## Model D
+Perform one hot encoding on columns that appeared to be categorical and noted differences if any.
+* Used 28 Features.
+* Adjusted R-squared of 0.604( **60.4%** of variations were explained by this model)
+* Root Mean Squared error(RMSE) of **231070.21**.
+
+## Final Model
+Included data from the grade column and performed one hot encoding
+* Used 38 Features
+* Adjusted R-squared of 0.681( **68.1%** of variations were explained by this model)
+* Root Mean Squared error(RMSE) of **207312.12**.
+
+
 
 
 
