@@ -7,6 +7,17 @@ Elite Properties Group has the need to develop a reliable and accurate model tha
 
 The primary objective of this project is to build a robust predictive model that accurately estimates the sale prices of residential properties listed by Elite Properties Group. By utilizing the available dataset, the agency aims to offer clients reliable and data-driven pricing advice, enhancing their confidence in the sales process and facilitating optimal pricing strategies.
 
+After building the model, we will address the following descriptive questions through data visualization:
+
+#### 1. Does the number of bathrooms have an impact on sale price?
+Here, what is the relationship between bathrooms and sale price. Do home buyers prefer houses with more bathrooms?
+
+#### 2. How does square feet of living room area impact sale price?
+Here, does it mean if a house has a larger living room square feet that results to a higher sale price?
+
+#### 3. Does presence or absence of a waterfront have an impact on saleprice?
+Do home buyers prefer houses with a waterfront view or not?
+
 # Data Understanding
 To support their operations and decision-making processes, Elite Properties Group collects and analyzes various data related to the real estate market and property transactions. This data includes:
 * Saleprice
@@ -29,3 +40,66 @@ To support their operations and decision-making processes, Elite Properties Grou
 * **Square Footage of Living Space:** The square footage of the living space is a key determinant of a property's size and functionality. Elite Properties can consider it as a significant feature, as larger living spaces often command higher sale prices.
 * **Number of Floors (Levels) in the House:** The number of floors indicates the vertical layout of a property and can influence its overall appeal and functionality. Properties with multiple floors may be considered more desirable and can potentially have higher sale prices.
 * **Quality of View from the House:** The quality of the view from a property, such as scenic landscapes or city skylines, can significantly impact its value. Elite Properties can consider this feature relevant, particularly if they deal with properties that offer exceptional views.
+
+The column names and descriptions as provided can be found in the `column_names.md` file in this repository. For convenience they have been reproduced below.
+
+### Column Names and descriptions for Kings County Data Set
+
+* **id** - unique identified for a house
+* **dateDate** - house was sold
+* **pricePrice** - is prediction target
+* **bedroomsNumber** - of Bedrooms/House
+* **bathroomsNumber** - of bathrooms/bedrooms
+* **sqft_livingsquare** - footage of the home
+* **sqft_lotsquare** - footage of the lot
+* **floorsTotal** - floors (levels) in house
+* **waterfront** - House which has a view to a waterfront
+* **view** - Has been viewed
+* **condition** - How good the condition is ( Overall )
+* **grade** - overall grade given to the housing unit, based on King County grading system
+* **sqft_above** - square footage of house apart from basement
+* **sqft_basement** - square footage of the basement
+* **yr_built** - Built Year
+* **yr_renovated** - Year when house was renovated
+* **zipcode** - zip
+* **lat** - Latitude coordinate
+* **long** - Longitude coordinate
+* **sqft_living15** - The square footage of interior housing living space for the nearest 15 neighbors
+* **sqft_lot15** - The square footage of the land lots of the nearest 15 neighbors
+
+# Modeling
+Created 4 models before finalizing the final model.
+
+## Model A
+* Number of Features was 1. (sqft_living)
+* Adjusted R-squared of 0.493( 49.3% of variations were explained by this model)
+* Root Mean Squared error(RMSE) of 261689.59 meaning that on average the actual price will be USD 261,689 more or less than our predicted price. 
+* Built a scatter plot with the predicted y values and found that for smaller living areas our model looks decent but as the sqft_living value increases our model's performance declines. This shows that sqft_living is not a good enough predictor for larger houses.
+![Scatter Plot with Predicted values](https://example.com/image.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
