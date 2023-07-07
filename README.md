@@ -115,7 +115,7 @@ Houses off `grade_13` are worth around USD 2,000,000 while houses with 7-8 bedro
 
 # Visualization
 ### 1. Does the number of bathrooms have an impact on sale price?
-![Bar plot of bathrooms and price](https://example.com/image.png)
+![Bar plot of bathrooms and price](https://github.com/brandonbush2/Elite-Properties-Project/blob/master/Images/Bar%20Plot%20of%20bathrooms%20and%20price.png)
 
 From the barplot above, houses with 8 bathrooms have the highest SalePrice. Houses with fewer bathrooms have a lower Sale Price which would mean that home buyers would prefer houses with more bathrooms. Also from our model we identified that houses with more bathrooms i.e 7 and 8 have a higher coefficient and impact SalePrice more.
 
